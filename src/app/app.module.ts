@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DoughnutComponent } from '../app/doughnut/doughnut.component';
+import { HttpComponent } from '../app/httpclient/httpclient.component';
+import { DatabindComponent } from '../app/databinging/databind.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DoughnutComponent
+    HttpComponent,
+    DatabindComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

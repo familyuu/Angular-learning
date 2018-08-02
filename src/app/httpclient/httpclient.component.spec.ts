@@ -3,11 +3,11 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { DoughnutComponent } from './doughnut.component';
+import { DoughnutComponent } from './httpclient.component';
 
-describe('DoughnutComponent', () => {
-  let component: DoughnutComponent;
-  let fixture: ComponentFixture<DoughnutComponent>;
+describe('HttpComponent', () => {
+  let component: HttpComponent;
+  let fixture: ComponentFixture<HttpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -17,7 +17,7 @@ describe('DoughnutComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DoughnutComponent);
+    fixture = TestBed.createComponent(HttpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,7 @@
+<!-- 四种数据绑定方式 -->
+<div>
+    <h2>{{valueToShow}}</h2>
+    <h2 [innerHtml]="valueToTemplate"></h2>
+    <button (click)="eventHandler()">Click me</button>
+</div>
+<div><input type="text" id="input" name="input" [(ngModel)]="valueTwoBind">{{valueTwoBind}}</div>
