@@ -1,0 +1,9 @@
+.panel {
+    margin: 10px 10px;
+    background-color: #226777;
+    border: 1px solid green;
+}
+.panel label {
+    display: inline-block;
+    margin: 5px 5px;
+}

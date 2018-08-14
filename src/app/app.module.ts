@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HttpComponent } from '../app/httpclient/httpclient.component';
 import { DatabindComponent } from '../app/databinging/databind.component';
+import { ChildComponent } from "../app/httpclient/childNotifyParentWithPolling/child.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HttpComponent,
-    DatabindComponent
+    DatabindComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
