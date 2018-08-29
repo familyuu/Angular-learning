@@ -27,3 +27,22 @@
   <label>data bind</label>
   <app-databind></app-databind>
 </div>
+
+<div class="panel">
+   <alert type="success">hello</alert>
+   <div class="btn-group" dropdown>
+      <button type="button" dropdownToggle class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split">
+        <span class="caret"></span>
+        <span class="sr-only"></span>
+      </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem">
+          <a class="dropdown-item" routerLink="/pool/add">
+            <i class="fa fa-fw fa-plus"></i>
+            <span i18n>Add</span>
+          </a>
+        </li>
+      </ul>
+   </div>
+
+</div>
