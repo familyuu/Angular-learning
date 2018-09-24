@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HttpComponent } from '../app/httpclient/httpclient.component';
 import { DatabindComponent } from '../app/databinging/databind.component';
 import { ChildComponent } from "../app/httpclient/childNotifyParentWithPolling/child.component";
+import { ChangeDetectComponent } from './change-detect/change-detect.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HttpComponent,
     DatabindComponent,
-    ChildComponent
+    ChildComponent,
+    ChangeDetectComponent
   ],
   imports: [
     BrowserModule,
