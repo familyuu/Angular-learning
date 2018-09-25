@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./httpclient.component.css']
 })
 
-export class HttpComponent implements OnInit, OnDestroy{
+export class HttpComponent implements OnInit {
 
   labels: any[];
   requestUrl: string;
@@ -17,7 +17,6 @@ export class HttpComponent implements OnInit, OnDestroy{
     this.labels = ["Income", "Outcome"];
     this.requestUrl = "http://10.240.217.156:4200";
   }
-  ngOnDestroy() {}
 
 
   getString = function() {

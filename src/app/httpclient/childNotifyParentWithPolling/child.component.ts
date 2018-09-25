@@ -12,15 +12,13 @@ export class ChildComponent implements OnInit, OnDestroy{
   @Output() trigger = new EventEmitter();
   private list: any[];
   private reloadSubscriber; 
-  constructor() { }
 
   ngOnInit() {
     this.list = ["Income", "Outcome"];
-    this.reloadSubscriber = observableTimer(0, 5000).subscribe(() => {
-      return this.reloadData();
-    });
+    // this.reloadSubscriber = observableTimer(0, 5000).subscribe(() => {
+    //   return this.reloadData();
+    // });
   }
-  ngOnDestroy() {}
 
 
   reloadData = function() {
