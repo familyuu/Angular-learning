@@ -30,15 +30,14 @@ export class ChangeDetectComponent implements OnInit {
        * Only with run change detection explicitly, 
        * view will update when you just change the name value.
        */
-      this.name.second = "mao";
+      // this.name.second = "mao";
       // this.cdr.detectChanges();
-      this.cdr.markForCheck();
+      // this.cdr.markForCheck();
 
-
-      // this.name = {
-      //   first: "guo",
-      //   second: "mao"
-      // };
+      this.name = {
+        first: "guo",
+        second: "mao"
+      };
     }, 5000);
   }
 

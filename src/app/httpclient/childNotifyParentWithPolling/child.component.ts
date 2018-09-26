@@ -7,7 +7,7 @@ import { timer as observableTimer } from 'rxjs';
   styleUrls: ['./child.component.css']
 })
 
-export class ChildComponent implements OnInit, OnDestroy{
+export class ChildComponent implements OnInit{
 
   @Output() trigger = new EventEmitter();
   private list: any[];
