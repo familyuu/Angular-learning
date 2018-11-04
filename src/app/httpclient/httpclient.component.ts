@@ -15,13 +15,13 @@ export class HttpComponent implements OnInit {
 
   ngOnInit() {
     this.labels = ["Income", "Outcome"];
-    this.requestUrl = "http://10.240.217.156:4200";
+    this.requestUrl = "http://localhost:3000";
   }
 
 
   getString = function() {
     this.http.get(this.requestUrl).subscribe(function(data) {
-      console.log(data);
+      alert("Response data is" + data);
     });
   }
 }
