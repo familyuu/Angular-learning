@@ -2,7 +2,7 @@
     "name": "angular",
     "version": "0.0.0",
     "scripts": {
-        "ng": "ng generate component changeDetect",
+        "ng": "ng generate service jsonp-request",
         "start": "ng serve --port 8080",
         "build": "ng build",
         "test": "ng test",
