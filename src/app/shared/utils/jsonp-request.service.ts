@@ -23,12 +23,12 @@ export class JsonpRequestService {
 
     const script = document.createElement('script');    // 动态创建script标签
     window.jsonpCb = (res) => {
-      document.body.removeChild(script);
-      delete window.jsonpCb;
+      document.body.removeChild(script)
+      delete window.jsonpCb
       return of(res);
     };
-    script.src = `${url}?${this.handleData(data)}&cb=jsonpCb`;
-    document.body.appendChild(script);
+    script.src = `${url}?${this.handleData(data)}&cb=jsonpCb`
+    document.body.appendChild(script)
   }
 }
 
