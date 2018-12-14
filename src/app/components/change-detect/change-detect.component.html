@@ -1,0 +1,8 @@
+<div style="border: 1px solid green">
+    <h3>Change Detection</h3>
+    <button (click)="onClick()" class="btn btn-default">Click me</button>
+    <p>Parent getter: {{ runChangeDetection }}</p>
+    <p>name: {{ name.first }}, {{ name.second }}</p>
+    <p>age: {{ age }}</p>
+</div>
+<app-detect-child [name]="name" [age]="age"></app-detect-child>

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
 import { of } from 'rxjs';
-
+import { UtilsModule } from './utils.module';
 @Injectable({
-  providedIn: 'root'
+  providedIn: UtilsModule
 })
-export class JsonpRequestService {
+export class JsonpService {
 
   constructor() { }
 
@@ -22,11 +22,11 @@ export class JsonpRequestService {
   request(url: string, data: any) {
 
     const script = document.createElement('script');    // 动态创建script标签
-    window.jsonpCb = (res) => {
-      document.body.removeChild(script)
-      delete window.jsonpCb
-      return of(res);
-    };
+    // window.jsonpCb = (res) => {
+    //   document.body.removeChild(script)
+    //   delete window.jsonpCb
+    //   return of(res);
+    // };
     script.src = `${url}?${this.handleData(data)}&cb=jsonpCb`
     document.body.appendChild(script)
   }

@@ -1,0 +1,7 @@
+<div style="border:2px solid red">
+  <h4>Parent component</h4>
+  <button (click)="changeChildName()">Click Me</button>
+  <app-lifecycle-child [childName]="childName">
+    <button (click)="changeChildNamefromContent()">hello</button>
+  </app-lifecycle-child>
+</div>

@@ -1,0 +1,8 @@
+
+<div>
+  <h4>User List from http get</h4>
+  <button (click)="getUsers()">Click, Send a http request</button>
+  <ul>
+    <li *ngFor="let user of users">{{ user.name }}</li>
+  </ul>
+</div>

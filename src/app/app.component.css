@@ -1,9 +1,10 @@
 .panel {
-    margin: 10px 10px;
-    background-color: #226777;
-    border: 1px solid green;
+    margin: auto;
+    margin: 50px 50px;
 }
-.panel label {
-    display: inline-block;
-    margin: 5px 5px;
+
+nav a {
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 2px;
 }
