@@ -1,8 +1,11 @@
 
 <div>
-  <h4>User List from http get</h4>
-  <button (click)="getUsers()">Click, Send a http request</button>
+  <h4>User List</h4>
   <ul>
-    <li *ngFor="let user of users">{{ user.name }}</li>
+    <li *ngFor="let user of users">{{ user }}</li>
   </ul>
+
+  <h4>Add user</h4>
+  <input type="text" id="user" name="user" [(ngModel)]="user" />
+  <button (click)="addUser()">Add user</button>
 </div>

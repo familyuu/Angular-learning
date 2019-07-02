@@ -1,11 +1,16 @@
 <div>
   <!-- 四种数据绑定方式 -->
-  <h3>Data Binding</h3>
+  <h4>Data Binding</h4>
   <div>
-    <h2>{{valueToShow}}</h2>
-    <h2 [innerHtml]="valueToTemplate"></h2>
+    <h4>{{valueToShow}}</h4>
+    <h4 [innerHtml]="valueToTemplate"></h4>
+    <p><input type="text" id="input" name="input" [(ngModel)]="valueTwoBind">{{valueTwoBind}}</p>
     <button (click)="eventHandler()">Click me</button>
-  </div>
-  <input type="text" id="input" name="input" [(ngModel)]="valueTwoBind">{{valueTwoBind}}
 
+  </div>
+
+  <h4>User List</h4>
+  <ul>
+    <li *ngFor="let user of users">{{ user }}</li>
+  </ul>
 </div>

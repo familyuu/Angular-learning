@@ -17,7 +17,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     ComponentsModule
   ],
-  providers: [],
   exports: [
     ComponentsModule
   ],
