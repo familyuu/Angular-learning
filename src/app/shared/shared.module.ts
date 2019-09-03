@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { ServicesModule } from './services/services.module';
-import { UtilsModule } from './utils/utils.module';
+
+import { IfNotDirective } from '../shared/directive/A-test-ng-if-not';
+
 @NgModule({
   imports: [
-    CommonModule,
-    ServicesModule,
-    UtilsModule
+    CommonModule
   ],
-  declarations: [],
+  declarations: [
+    IfNotDirective
+  ],
   exports: [
     ServicesModule,
-    UtilsModule
+    IfNotDirective
   ]
 })
 export class SharedModule { }
